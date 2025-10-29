@@ -15,7 +15,7 @@ function loadDeadDropList(targetElementId) {
             const dropData = text.split('\n')
                                   .map(line => line.trim())
                                   .filter(line => line.length > 0 && !line.startsWith('#'))
-                                  .map(line => {o
+                                  .map(line => {
                                       const parts = line.split('|').map(s => s.trim());
                                       return { 
                                           url: parts[0], 
