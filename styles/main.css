@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+:root {
+    --color-bg: #0A0A0A;
+    --color-text: #E0E0E0;
+    --color-accent: #00FF41;
+    --color-code-bg: #000000;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #111;
+    padding: 20px 50px;
+    border-bottom: 2px solid var(--color-accent);
+}
+
+nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+nav a.neon-link:hover {
+    color: var(--color-accent);
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.7);
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+.alerta-box {
+    border: 1px solid var(--color-accent);
+    background: rgba(0, 255, 65, 0.05);
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 0 5px var(--color-accent);
+}
+
+
+.posts-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.post-card {
+    display: block;
+    padding: 20px;
+    background-color: #1a1a1a;
+    text-decoration: none;
+    color: var(--color-text);
+    border: 1px solid #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.card-title {
+    color: var(--color-accent);
+    margin-top: 5px;
+}
+
+article h1,
+article h2 {
+    color: var(--color-accent);
+    border-bottom: 1px dashed #333;
+    padding-bottom: 5px;
+}
+
+article a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+article code {
+    background: var(--color-code-bg);
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #FFEA00;
+}
+
+article pre {
+    background: var(--color-code-bg);
+    padding: 15px;
+    overflow-x: auto;
+    border-left: 3px solid var(--color-accent);
+    color: var(--color-text);
+}
+
+
+
+
+
+.markdown-body {
+
+    color: var(--color-text);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3 {
+    color: var(--color-accent);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #333;
+}
+
+.markdown-body p {
+    margin-bottom: 1em;
+    line-height: 1.8;
+}
+
+.markdown-body a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.markdown-body a:hover {
+    color: #00FF99;
+    text-decoration: underline;
+}
+
+.markdown-body blockquote {
+    font-style: italic;
+    border-left: 5px solid var(--color-accent);
+    padding: 10px 15px;
+    margin: 20px 0;
+    background-color: #151515;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+    padding-left: 25px;
+    margin-bottom: 1em;
+}
+
+.markdown-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #333;
+}
+
+.markdown-body code {
+    background-color: #1a1a1a;
+    color: #FFEA00;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.markdown-body pre code {
+    background-color: #000000;
+    display: block;
+    padding: 15px;
+    border-left: 3px solid var(--color-accent);
+    overflow-x: auto;
+}
+
+.neon-link-small {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 0.95em;
+    padding: 5px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.neon-link-small:hover {
+    background-color: rgba(0, 255, 65, 0.1);
+    border-radius: 4px;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+.intro-text {
+    font-style: italic;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #333;
+    margin-bottom: 30px;
+}
+
+.deaddrop-item {
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.deaddrop-item:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.deaddrop-link {
+    color: var(--color-accent);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.deaddrop-link:hover {
+    text-decoration: underline;
+}
+
+.description {
+    color: #b0b0b0;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.external-icon {
+    font-size: 0.8em;
+    color: #00FF41;
+    margin-left: 5px;
+}

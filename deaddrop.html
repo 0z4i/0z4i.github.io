@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0Z4I BOOK</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>0Z4I BOOK</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="deaddrop.html">DEAD DROP</a>
+            <a href="https://github.com/0z4i" target="_blank" class="neon-link">GitHub</a>
+            <a href="https://medium.com/@umbraxsecure" target="_blank" class="neon-link">Medium</a>
+            <a href="https://www.instagram.com/umbraxsecure/" target="_blank" class="neon-link">Instagram</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>:: DEAD DROP ZONE</h2>
+        <!-- <p class="intro-text">
+            <a href="index.html" class="neon-link-small" style="margin-left: 15px;">&lt;&lt; </a>
+        </p> -->
+
+        <section id="deaddrop-list" class="deaddrop-grid">
+        </section>
+    </main>
+
+    <script src="js/deaddrop-parser.js"></script>
+    <script>
+        window.onload = () => {
+            loadDeadDropList('deaddrop-list');
+        };
+    </script>
+</body>
+
+</html>

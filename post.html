@@ -1,0 +1,30 @@
+<head><link rel="stylesheet" href="styles/main.css"></head>
+<main>
+    <header>
+                <nav>
+            <a href="index.html">Home</a>
+            <a href="deaddrop.html">DEAD DROP</a>
+            <a href="https://github.com/0z4i" target="_blank" class="neon-link">GitHub</a>
+            <a href="https://medium.com/@umbraxsecure" target="_blank" class="neon-link">Medium</a>
+            <a href="https://www.instagram.com/umbraxsecure/" target="_blank" class="neon-link">Instagram</a>
+        </nav>
+    </header>
+    <article id="post-content" class="markdown-body">
+        </article>
+</main>
+    <script src="js/marked.min.js"></script>
+    <script src="js/markdown-parser.js"></script>
+<script>
+    window.onload = () => {
+        // Obtener el nombre del archivo desde la URL (?file=2025-10-28-osint-intro.md)
+        const urlParams = new URLSearchParams(window.location.search);
+        const fileName = urlParams.get('file');
+        
+        if (fileName) {
+            // Llama a la función para cargar el archivo y renderizarlo
+            loadAndRenderPost(fileName, 'post-content');
+        } else {
+            document.getElementById('post-content').innerHTML = "<h2>Error 404: Post no encontrado.</h2>";
+        }
+    };
+</script>
