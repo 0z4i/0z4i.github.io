@@ -93,5 +93,6 @@ Searching for the other terminals can show that they are very different from the
 
 **a) Determine the exact date and time when the video was recorded.**  
 	- Sep 1, 2024 - 9:14 pm 
+	
 **b) Identify the airport and the terminal where the TV screen was located.**  
 	- Delhi IGI Airport Terminal 3
