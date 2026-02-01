@@ -9,6 +9,7 @@ Airports are global hubs where cultures, languages, and lives briefly intersect.
 a) Determine the exact date and time when the video was recorded.  
 	Sep 1, 2024 - 9:14 pm ??
 	
+	
 b) Identify the airport and the terminal where the TV screen was located.  
 
 **Exercise level:**  
@@ -59,9 +60,11 @@ It's possible to find an [article from the Indian Express]([https://indianexpres
 
 
 Now with the cross comparison between the two news pages that share the same date, it's possible to deduce that the date is **Sep 1, 2024.**
+
 ### Find Terminal
 
-![[video.jpg]]
+![video](https://github.com/user-attachments/assets/b49f3311-e30f-42ac-96e3-97d0207342f1)
+
 
 With the video, it is possible to see:
 - Windows with some light reflection
@@ -94,6 +97,7 @@ Searching for the other terminals can show that they are very different from the
 
 **a) Determine the exact date and time when the video was recorded.**  
 	- Sep 1, 2024 - 9:14 pm 
+	
 	
 **b) Identify the airport and the terminal where the TV screen was located.**  
 	- Delhi IGI Airport Terminal 3
