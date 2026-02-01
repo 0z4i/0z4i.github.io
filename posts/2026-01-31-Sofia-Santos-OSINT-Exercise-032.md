@@ -8,6 +8,7 @@ Airports are global hubs where cultures, languages, and lives briefly intersect.
 **Your task is to:**  
 a) Determine the exact date and time when the video was recorded.  
 	Sep 1, 2024 - 9:14 pm ??
+	
 b) Identify the airport and the terminal where the TV screen was located.  
 
 **Exercise level:**  
