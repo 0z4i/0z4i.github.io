@@ -279,7 +279,7 @@ def take_chunk(data):
 If the chunk exfiltration (load) is completed, the server stores the result of each task in the corresponding agent and message; it makes it possible to show data in a graphic interface if there is one.
 **Insert demostration video**
 
-![demo.gif](../images/demo.gif)
+![demo](https://github.com/user-attachments/assets/1d3eb8c2-89c1-42c0-9867-7f08dc726158)
 
 ## Detection and Mitigation
 
