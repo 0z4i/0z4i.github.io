@@ -1,0 +1,48 @@
+{
+	"posts": [
+		{
+			"name": "Leaked Credentials: The easy way",
+			"categories": ["OSINT"],
+			"order": 1,
+			"file": "Leaked Credentials: The easy way.html"
+		},
+		{
+			"name": "DNS Proxy for C2 Servers",
+			"categories": ["TOOLING", "RED-TEAM"],
+			"order": 2,
+			"file": "DNS Proxy for C2 Servers.html"
+		},
+		{
+			"name": "Weaponized DNS Resolving remote commands",
+			"categories": ["TOOLING", "RED-TEAM"],
+			"order": 3,
+			"file": "Weaponized DNS Resolving remote commands.html"	
+		},
+		{
+			"name": "SOFIA-SANTOS-024",
+			"categories": ["OSINT", "CTF"],
+			"order": 4,	
+			"file": "SOFIA-SANTOS-024.html"	
+		},
+		{
+			"name": "SOFIA-SANTOS-030",
+			"categories": ["OSINT", "CTF"],
+			"order": 5,
+			"file": "SOFIA-SANTOS-030.html",
+			"attachment": "ex-30.pdf",
+			"attachment_description": "Download the intel report about the exercise"
+		},
+		{
+			"name": "SOFIA-SANTOS-032",
+			"categories": ["OSINT", "CTF"],
+			"order": 6,
+			"file": "SOFIA-SANTOS-032.html"
+		},
+		{
+			"name": "Telegram Autoexposures",
+			"categories": ["OSINT"],
+			"order": 7,
+			"file": "Telegram Autoexposures.html"
+		}
+	]
+}

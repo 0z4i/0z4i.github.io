@@ -1,0 +1,13 @@
+{
+    "drops": [
+        {
+            "name": "Sofia Santos OSINT Exercise #30",
+            "description": "OSINT Exercise walkthrough",
+            "file": "ex-30.pdf",
+            "category": [
+                "OSINT"
+            ],
+            "order": 1
+        }
+    ]
+}

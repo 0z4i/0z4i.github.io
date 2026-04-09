@@ -1,0 +1,267 @@
+:root {
+  --matrix-green: #00FF41;
+  --bright-green: #52FF88;
+  --dim-green: #004400;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--matrix-green) transparent;
+}
+
+
+body {
+  background-color: #000;
+  color: var(--matrix-green);
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+   scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+  background: var(--matrix-green);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--matrix-green);
+
+  background: #050505;
+  font-size: 1.05rem;
+}
+
+nav .logo {
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+nav .logo::before {
+  content: "> ";
+  color: var(--bright-green);
+}
+
+nav .links {
+  display: flex;
+  gap: 18px;
+}
+
+nav .links a {
+  color: var(--matrix-green);
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+nav .links a:hover {
+  opacity: 1;
+  color: var(--bright-green);
+  text-shadow: 0 0 5px var(--matrix-green);
+}
+
+#app {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: var(--bright-green);
+  border-bottom: 2px solid var(--matrix-green);
+  text-transform: uppercase;
+  margin-top: 25px;
+  padding-bottom: 5px;
+}
+
+.post {
+  cursor: pointer;
+}
+
+.post:active {
+  transform: scale(0.98);
+}
+
+.post, .drop {
+  border: 1px solid var(--matrix-green);
+  background-color: #050505;
+  padding: 15px;
+  margin: 15px 0;
+  transition: all 0.2s ease;
+}
+
+.post:hover {
+  box-shadow: 0 0 10px rgba(0,255,65,0.3);
+}
+
+.post h2 {
+  margin: 0;
+  cursor: pointer;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tags span {
+  margin-right: 6px;
+  font-size: 0.75rem;
+  color: var(--dim-green);
+}
+
+.categories {
+  margin-bottom: 15px;
+}
+
+button {
+  background: black;
+  border: 1px solid var(--matrix-green);
+  color: var(--matrix-green);
+  margin: 5px 5px 5px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--matrix-green);
+  color: black;
+}
+
+.post-content {
+  border: 1px solid var(--matrix-green);
+  background: #050505;
+  padding: 20px;
+  margin-top: 20px;
+
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.post-content strong,
+.post-content b {
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255,255,255,0.4);
+}
+
+.post-content blockquote.subtle-note {
+  border-left: 2px solid var(--dim-green);
+  color: var(--dim-green);
+  font-size: 0.8rem;
+  margin: 10px 0;
+  padding-left: 15px;
+  text-shadow: none;
+}
+
+.post-content .codehilite {
+  background: #000;
+  border-left: 4px solid var(--matrix-green);
+  padding: 15px;
+  overflow-x: auto;
+}
+
+.codehilite .k { color: #00FF41; font-weight: bold; }
+.codehilite .s { color: #FFFFFF; }
+.codehilite .nf { color: #52FF88; }
+.codehilite .c1 { color: #008F11; font-style: italic; }
+.codehilite .m { color: #FFFFFF; }
+
+a {
+  color: var(--matrix-green);
+}
+
+a:hover {
+  color: var(--bright-green);
+}
+
+.attachment {
+  border: 1px dashed var(--bright-green);
+  background: #020202;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.attachment p {
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+}
+
+.attachment a {
+  color: var(--bright-green);
+  text-decoration: none;
+}
+
+.attachment a:hover {
+  text-shadow: 0 0 5px var(--bright-green);
+}
+
+img, pre, code {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+
+  nav {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  nav .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #app {
+    margin: 10px auto;
+    padding: 0 12px;
+  }
+
+  .post, .drop {
+    padding: 12px;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bright-green);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0,255,65,0.3);
+}
