@@ -43,6 +43,12 @@
 			"categories": ["OSINT"],
 			"order": 7,
 			"file": "Telegram Autoexposures.html"
+		},
+		{
+			"name": "OSINT Industires CTF: On the Traces of the Silk Road Black Market",
+			"categories": ["OSINT","CTF"],
+			"order": 8,
+			"file": "OI-CTF-On-the-Traces-of-the-Silk-Road-Black-Market.html"
 		}
 	]
 }
