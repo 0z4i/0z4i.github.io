@@ -55,6 +55,12 @@
 			"categories": ["OSINT", "REAL-OPS"],
 			"order": 10,
 			"file": "Partial-data-full-identity.html"
+		},
+		{
+			"name": "[REPOST] How to setup a darkweb site",
+			"categories": ["TOOLING", "INFRA"],
+			"order": 11,
+			"file": "How to setup a darkweb site.html"
 		}
 	]
 }
