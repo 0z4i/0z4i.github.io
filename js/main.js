@@ -1,4 +1,28 @@
 const APP = document.getElementById("app");
+const MENU_TOGGLE = document.querySelector(".menu-toggle");
+const NAV_LINKS = document.querySelector(".links");
+
+MENU_TOGGLE?.addEventListener("click", () => {
+  NAV_LINKS?.classList.toggle("open");
+});
+
+function setActiveNav(route) {
+  NAV_LINKS?.classList.remove("open");
+  document.querySelectorAll(".links a[data-route]").forEach(a => {
+    a.classList.toggle("active", a.dataset.route === route);
+  });
+}
+
+function showLoading(msg) {
+  return `<div class="loading"><span class="cursor"></span> ${msg}</div>`;
+}
+
+function renderWithFade(html) {
+  APP.innerHTML = html;
+  APP.classList.remove("fade-in");
+  void APP.offsetWidth;
+  APP.classList.add("fade-in");
+}
 
 async function fetchJSON(path) {
   try {
@@ -24,16 +48,13 @@ function getUniqueCategories(posts) {
 }
 
 function navigateToPost(file) {
-  APP.innerHTML = `
-    <div style="opacity:0.7">
-      <p>[loading ${decodeURIComponent(file)}]</p>
-    </div>
-  `;
-
+  APP.innerHTML = showLoading("loading " + decodeURIComponent(file));
   window.location.hash = `#post=${file}`;
 }
 
 async function loadPosts() {
+  setActiveNav("posts");
+
   const data = await fetchJSON("posts.json");
   if (!data) return;
 
@@ -57,8 +78,7 @@ async function loadPosts() {
     <div id="post-list"></div>
   `;
 
-  APP.innerHTML = html;
-
+  renderWithFade(html);
   renderPostList(posts);
 }
 
@@ -87,6 +107,10 @@ function renderPostItem(p) {
 }
 
 async function filterCategory(category) {
+  document.querySelectorAll(".categories button").forEach(btn => {
+    btn.classList.toggle("active", btn.textContent === category);
+  });
+
   const data = await fetchJSON("posts.json");
   if (!data) return;
 
@@ -98,6 +122,10 @@ async function filterCategory(category) {
 }
 
 const postCache = {};
+
+function cleanPostHTML(raw) {
+  return raw.replace(/<style[\s\S]*?<\/style>/gi, "");
+}
 
 async function prefetchPost(file) {
   const decoded = decodeURIComponent(file);
@@ -113,8 +141,11 @@ async function prefetchPost(file) {
 }
 
 async function loadPost(file) {
+  setActiveNav(null);
+
   try {
     const decodedFile = decodeURIComponent(file);
+    APP.innerHTML = showLoading("loading " + decodedFile);
 
     const data = await fetchJSON("posts.json");
     if (!data) return;
@@ -124,11 +155,11 @@ async function loadPost(file) {
     let html;
 
     if (postCache[decodedFile]) {
-      html = postCache[decodedFile];
+      html = cleanPostHTML(postCache[decodedFile]);
     } else {
       const res = await fetch(`posts/${decodedFile}`);
       if (!res.ok) throw new Error("Post not found");
-      html = await res.text();
+      html = cleanPostHTML(await res.text());
     }
 
     let attachmentHTML = "";
@@ -139,22 +170,16 @@ async function loadPost(file) {
       attachmentHTML = `
         <div class="attachment">
           <p>${postMeta.attachment_description || "[attachment available]"}</p>
-          <a href="drops/${attachmentFile}" download>
-            [download attachment]
-          </a>
+          <a href="drops/${attachmentFile}" download>[download attachment]</a>
         </div>
       `;
     }
 
-    APP.innerHTML = `
-      <button onclick="window.location.hash='#posts'">[← back]</button>
-
+    renderWithFade(`
+      <button class="back-btn" onclick="window.location.hash='#posts'">[← back]</button>
       ${attachmentHTML}
-
-      <div class="post-content">
-        ${html}
-      </div>
-    `;
+      <div class="post-content">${html}</div>
+    `);
 
   } catch (err) {
     console.error(err);
@@ -163,17 +188,17 @@ async function loadPost(file) {
 }
 
 async function loadDrops() {
+  setActiveNav("drops");
+
   const data = await fetchJSON("drops.json");
   if (!data) return;
 
   const drops = sortByOrderDesc(data.drops);
 
-  let html = `
+  renderWithFade(`
     <h1>[deaddrop]</h1>
     <div id="drop-list"></div>
-  `;
-
-  APP.innerHTML = html;
+  `);
 
   renderDropList(drops);
 }

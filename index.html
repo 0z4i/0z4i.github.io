@@ -37,9 +37,11 @@
     <header>
         <nav>
             <div class="logo">0z4i@book:$</div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
             <div class="links">
-                <a href="#posts">posts</a>
-                <a href="#drops">deaddrop</a>
+                <a href="#posts" data-route="posts">posts</a>
+                <a href="#drops" data-route="drops">deaddrop</a>
+                <span class="sep"></span>
                 <a href="https://github.com/0z4i" target="_blank" rel="noopener">github</a>
                 <a href="https://medium.com/@0z4i" target="_blank" rel="noopener">medium</a>
                 <a href="https://www.instagram.com/_0z4i_" target="_blank" rel="noopener">instagram</a>
@@ -49,10 +51,8 @@
 
     <main id="app"></main>
 
-    <footer style="text-align:center; font-size:0.7rem; opacity:0.6; margin:20px 0;">
-        <p>
-            OSINT • Cybersecurity • Red Team • Threat Intelligence • CTF Writeups
-        </p>
+    <footer>
+        <p>OSINT • Cybersecurity • Red Team • Threat Intelligence • CTF Writeups</p>
     </footer>
 
     <script src="js/main.js"></script>
