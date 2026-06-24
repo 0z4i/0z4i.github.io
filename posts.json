@@ -1,72 +1,104 @@
 {
-	"posts": [
-		{
-			"name": "Leaked Credentials: The easy way",
-			"categories": ["OSINT"],
-			"order": 1,
-			"file": "Leaked Credentials: The easy way.html"
-		},
-		{
-			"name": "DNS Proxy for C2 Servers",
-			"categories": ["TOOLING", "RED-TEAM"],
-			"order": 2,
-			"file": "DNS Proxy for C2 Servers.html"
-		},
-		{
-			"name": "Weaponized DNS Resolving remote commands",
-			"categories": ["TOOLING", "RED-TEAM"],
-			"order": 3,
-			"file": "Weaponized DNS Resolving remote commands.html"	
-		},
-		{
-			"name": "SOFIA-SANTOS-024",
-			"categories": ["OSINT", "CTF"],
-			"order": 4,	
-			"file": "SOFIA-SANTOS-024.html"	
-		},
-		{
-			"name": "SOFIA-SANTOS-030",
-			"categories": ["OSINT", "CTF"],
-			"order": 5,
-			"file": "SOFIA-SANTOS-030.html",
-			"attachment": "ex-30.pdf",
-			"attachment_description": "Download the intel report about the exercise"
-		},
-		{
-			"name": "SOFIA-SANTOS-032",
-			"categories": ["OSINT", "CTF"],
-			"order": 6,
-			"file": "SOFIA-SANTOS-032.html"
-		},
-		{
-			"name": "Telegram Autoexposures",
-			"categories": ["OSINT"],
-			"order": 7,
-			"file": "Telegram Autoexposures.html"
-		},
-		{
-			"name": "OSINT Industires CTF: On the Traces of the Silk Road Black Market",
-			"categories": ["OSINT","CTF"],
-			"order": 8,
-			"file": "OI-CTF-On-the-Traces-of-the-Silk-Road-Black-Market.html"
-		},
-		{
-			"name": "Partial Data, Full Identity",
-			"categories": ["OSINT", "REAL-OPS"],
-			"order": 10,
-			"file": "Partial-data-full-identity.html"
-		},
-		{
-			"name": "[REPOST] How to setup a darkweb site",
-			"categories": ["TOOLING", "INFRA"],
-			"order": 11,
-			"file": "How to setup a darkweb site.html"
-		},
+    "posts": [
+        {
+            "name": "DNS Proxy for C2 Servers",
+            "categories": [
+                "TOOLING",
+                "RED-TEAM"
+            ],
+            "order": 1,
+            "file": "DNS Proxy for C2 Servers.html"
+        },
+        {
+            "name": "Weaponized DNS Resolving remote commands",
+            "categories": [
+                "TOOLING",
+                "RED-TEAM"
+            ],
+            "order": 2,
+            "file": "Weaponized DNS Resolving remote commands.html"
+        },
+        {
+            "name": "SOFIA-SANTOS-024",
+            "categories": [
+                "OSINT",
+                "CTF"
+            ],
+            "order": 3,
+            "file": "SOFIA-SANTOS-024.html"
+        },
+        {
+            "name": "SOFIA-SANTOS-030",
+            "categories": [
+                "OSINT",
+                "CTF"
+            ],
+            "order": 4,
+            "file": "SOFIA-SANTOS-030.html",
+            "attachment": "ex-30.pdf",
+            "attachment_description": "Download the intel report about the exercise"
+        },
+        {
+            "name": "SOFIA-SANTOS-032",
+            "categories": [
+                "OSINT",
+                "CTF"
+            ],
+            "order": 5,
+            "file": "SOFIA-SANTOS-032.html"
+        },
+        {
+            "name": "Telegram Autoexposures",
+            "categories": [
+                "OSINT"
+            ],
+            "order": 6,
+            "file": "Telegram Autoexposures.html"
+        },
+        {
+            "name": "OSINT Industires CTF: On the Traces of the Silk Road Black Market",
+            "categories": [
+                "OSINT",
+                "CTF"
+            ],
+            "order": 7,
+            "file": "OI-CTF-On-the-Traces-of-the-Silk-Road-Black-Market.html"
+        },
+        {
+            "name": "Partial Data, Full Identity",
+            "categories": [
+                "OSINT",
+                "REAL-OPS"
+            ],
+            "order": 8,
+            "file": "Partial-data-full-identity.html"
+        },
+        {
+            "name": "[REPOST] How to setup a darkweb site",
+            "categories": [
+                "TOOLING",
+                "INFRA"
+            ],
+            "order": 9,
+            "file": "How to setup a darkweb site.html"
+        },
         {
             "name": "[REPOST] The Hidden Data Leaks Threatening Universities",
-            "categories": ["OSINT", "REAL-OPS"],
-            "order": "12",
-            "file":"The-Hidden-Data-Leaks-Threatening-Universities.html"
+            "categories": [
+                "OSINT",
+                "REAL-OPS"
+            ],
+            "order": "10",
+            "file": "The-Hidden-Data-Leaks-Threatening-Universities.html"
+        },
+        {
+            "name": "telegram-message-to-id",
+            "categories": [
+                "REAL-OPS",
+                "OSINT"
+            ],
+            "order": 11,
+            "file": "telegram-message-to-id.html"
         }
-	]
+    ]
 }
