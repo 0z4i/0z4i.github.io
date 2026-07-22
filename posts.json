@@ -99,6 +99,15 @@
             ],
             "order": 11,
             "file": "telegram-message-to-id.html"
+        },
+        {
+            "name":"Study Case: Verify identity and medical credentials for healthcare platforms",
+            "categories": [
+                "REAL-OPS",
+                "OSINT"
+            ],
+            "order": 12,
+            "file": "Study Case: Verify identity and medical credentials for healthcare platforms.html"
         }
     ]
 }
